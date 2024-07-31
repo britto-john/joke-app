@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Joke({ setup, punchline, type }) {
+function Joke({ setup, punchline, type, id }) {
   const [showPunchline, setShowPunchline] = useState(false);
 
   return (
@@ -9,7 +9,7 @@ function Joke({ setup, punchline, type }) {
         <h3>Punchline:{punchline}</h3>
 
         <div className="metadata">
-        <p>Joke ID:</p>
+        <p>Joke ID:{id}</p>
         <p>Joke Type:{type}</p>
         </div>
     </div>

@@ -31,7 +31,7 @@ function App() {
       <div className="jokes-container">
         {/* Display data from API */}
         {jokes.map((joke, index) => (
-          <Joke key={joke.id} setup={joke.setup} punchline={joke.punchline} type={joke.type} />
+          <Joke key={joke.id} setup={joke.setup} punchline={joke.punchline} type={joke.type} id={joke.id} />
         ))}
 
         {/* Use JSX below for each joke */}
